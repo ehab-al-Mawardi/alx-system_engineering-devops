@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -exec 644 755
+find . -type d -exec u+rwx g+rx o+rx
