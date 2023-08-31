@@ -1,0 +1,2 @@
+#!/bin/touch
+chmod 007 hello
