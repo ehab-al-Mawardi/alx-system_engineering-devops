@@ -1,4 +1,4 @@
 #!/bin/bash
-printf "%x\n" $DECIMAL
+export DECIMAL=16; printf "%x\n" "$DECIMAL"
 
 
