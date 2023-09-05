@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -exec sh -c 'echo "${0%.*}"' | tr '[:upper:]' '[:lower:]' | LC_COLLATE=C sort | uniq
+find . -type f -iname "*.gif" | rev | cut -d '.' -f 2- | tr '[:upper:]' '[:lower:]' | LC_COLLATE=C sort | uniq
