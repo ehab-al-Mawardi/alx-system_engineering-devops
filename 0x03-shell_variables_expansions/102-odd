@@ -1,3 +1,2 @@
 #!/bin/bash
-\ls -1 | grep -n '^' | grep -E '^[0-9]*[02468]:'
-
+\ls -1 | sed -n '1~2p'
