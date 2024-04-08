@@ -1,0 +1,35 @@
+https://www.linkedin.com/feed/update/urn:li:activity:7183072903771394048/
+
+What happens when you type https://www.google.com in your browser and press Enter ?!
+
+Let’s dive into the fascinating journey that unfolds this process below �� 
+
+1. DNS Request (Translating Names to IP Addresses)
+
+When you type "https://www.google.com" into your browser, the first thing your computer does is to translate this human-readable domain name into an IP address like 192.168.0.0 for example . It does so by sending a DNS query to a DNS server. The DNS server then looks up the corresponding IP address for "www.google.com" and sends it back to your computer.
+
+2. TCP/IP (The Language of the Web)
+
+With the IP address in hand, your computer initiates communication with the web server. This communication happens through a set of protocols called TCP/IP (Transmission Control Protocol/Internet Protocol). Imagine TCP/IP as the language spoken on the internet, ensuring information is broken down into packets, sent efficiently, and reassembled correctly at the other end.
+
+3. Firewall (The Gatekeeper)
+
+Before the connection is fully established, your computer’s firewall steps in. The firewall examines the incoming packets to ensure they are not malicious. If any packets raise suspicion, they are blocked, preventing a potentially harmful connection, So Firewalls act as a barrier between your computer and the internet, filtering incoming and outgoing traffic based on predefined security rules.
+
+4. HTTPS/SSL (Encryption for a Secure Journey)
+
+Assuming all is well, an HTTPS (Hypertext Transfer Protocol Secure) connection begins. HTTPS is a secure version of HTTP, and it encrypts the data exchanged between your computer and the web server. This encryption is achieved using SSL (Secure Sockets Layer) or TLS (Transport Layer Security) protocols. SSL/TLS ensures that no third party can intercept or read the data during transmission, So This encryption ensures confidentiality and integrity of the communication, preventing eavesdropping and tampering.
+
+5. Load-Balancer (Distributing the Workload)
+
+Large websites often use a load balancer. This acts like a traffic director, distributing incoming requests among multiple web servers. This ensures smooth operation and prevents any single server from getting overloaded.
+
+6. Web Server (Delivering the Goods)
+
+The web server receives the request from your computer. It retrieves the relevant files (like HTML, CSS, JavaScript) from its storage and prepares a response. The web server is the engine that generates the web page content you see in your browser.
+
+7. Application Server (Dynamic Content Powerhouse)
+Some websites use an additional layer called the application server. This server handles complex tasks and generates dynamic content.
+
+8. Database (The Information Vault)
+Websites often store data in a database, The database stores and retrieves information, such as search results, user profiles, or product details, This could be product information for an online store, user accounts for a social media platform.
