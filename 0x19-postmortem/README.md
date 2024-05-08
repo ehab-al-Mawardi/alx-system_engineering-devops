@@ -1,58 +1,41 @@
 Issue Summary:
-Duration:
-Start Time: May 5, 2024, 03:30 AM (UTC)
-End Time: May 8, 2024, 10:50 PM (UTC)
 
-![1](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/6c544c1d-3081-4177-b2c1-0fcdf4abb6dd)
+Duration:
+<br>
+Start Time: May 8th, 2024, 2:15 PM (EEST)
+End Time: May 8th, 2024, 5:30 PM (EEST)
+<br>
+
+![1](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/01ddfd05-1ec7-46fe-8b6e-ce36f548db2d)
 
 
 Impact:
-The outage turned our authentication service into a recluse, locking users out of their accounts and causing a disturbance in the digital force.
-User Experience: A no-entry sign was the theme of the day, affecting 30% of our users. Apologies for the involuntary digital detox!
 
+Our product listing service went rogue, causing a blackout for all product listings on our e-commerce platform. Customers encountered a frustrating "Product Not Found" message, hindering their shopping experience. This impacted approximately 70% of our user base during a critical sales period.
 Timeline:
-Detection:
-Like Batman responding to the Bat-Signal, our monitoring system pinged us at 10:30 AM with a distress signal - a sudden surge in failed logins.
 
-Actions Taken:
-Went on a Sherlock Holmes mission into the authentication server logs, chasing the villain causing this authentication havoc.
-Thought it was a DDoS attack, so we summoned the cybersecurity Avengers to analyze traffic patterns. Turns out, it was just our servers having a party and not inviting the authentication service.
-
-Misleading Paths:
-We were all set to defend against a DDoS apocalypse, only to find out it was a tiny misconfiguration having a field day.
-We spent quality time considering if our servers needed therapy for feeling overloaded. They assured us they were fine, just needed a little space.
-
-Escalation:
-Called in the SRE team and Network Security team, our own version of the X-Men, to tackle the mischievous misconfiguration.
-
-Resolution:
-Discovered that our authentication service was going through an identity crisis due to a recent configuration update.
-Pressed the rewind button, reverting to a time when our authentication service knew who it was.
-Implemented a hotfix, adding some digital therapy sessions to prevent identity crises in the future.
-
+Detection: Our usual eagle-eyed customer support team noticed a surge in support tickets regarding missing products at 2:30 PM (EEST).
+Actions Taken: The DevOps team immediately investigated the product listing service. Initial checks revealed normal server health metrics, leading us to suspect a problem with the underlying database.
+Misleading Investigation Paths: We prioritized a database performance optimization route, but queries remained slow.
+Escalation: After an hour of troubleshooting, the incident was escalated to the database administration team.
+Resolution: The DBA team discovered a recently deployed schema change had caused database locking, hindering product listing retrieval. The schema change was reverted at 5:15 PM (EEST), restoring product listings.
+<br>
 Root Cause and Resolution:
-Root Cause:
+![2](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/ec0173e7-c180-4723-9657-fd46273373a2)
 
-![2](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/6e9f88ad-2329-40a9-8eb6-c75933356a0f)
-
-
-The authentication service suffered from an existential crisis brought on by a misconfiguration update – a classic case of an identity mix-up.
-
-Resolution:
-Sent the service to a digital spa, reverting it to a more stable version.
-Applied a hotfix, including some code therapy to help it cope with the challenges of being a service in the digital age.
-Updated our monitoring system to send us a quick SOS if any other services decide to go through a rebellious phase.
+Root Cause: A recent database schema update intended to improve search functionality resulted in unintended locking behavior, significantly impacting query performance.
+Resolution: The problematic schema change was reverted, restoring normal database operation and product listing functionality.
 
 Corrective and Preventative Measures:
+
 Improvements/Fixes:
+![3](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/30f7a6a5-7cc1-4077-9ddd-72d116231bef)
 
-![3](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/0b8fb846-229e-4b78-af9e-3adf6c94f28a)
-
-
-Upgraded our monitoring system to be the ultimate life coach for our services – detecting and alerting on any signs of an identity crisis.
-Implemented a strict change control policy, ensuring services don't randomly change their personality without proper approval.
-Scheduled a team-building retreat for our servers to strengthen their bonds and prevent any future digital tantrums.
+Implement a more rigorous code review process for database schema changes.
+Integrate automated database performance testing into our deployment pipeline.
+<br>
 Tasks:
-Task 1: Throw a post-mortem party, celebrating the triumph over the misconfiguration monster.
-Task 2: Introduce a 'No Identity Crisis' policy for all services, with regular check-ins to ensure their digital well-being.
-Task 3: Document the adventure in our digital chronicles to entertain future generations of techies. There you have it - the epic tale of our authentication service's identity crisis. Remember, even servers need a little therapy now and then. Stay tuned for more tech sagas and may your servers always know who they are!
+Task 1: Conduct a code review workshop to emphasize the importance of considering edge cases during database schema changes.
+Task 2: Set up automated performance checks to monitor database health after deployments.
+Task 3: Review rollback procedures for database schema changes to ensure a faster recovery time in future incidents.
+This outage serves as a reminder of the importance of thorough testing and impact analysis before deploying database changes, especially during critical sales periods. By implementing the corrective measures outlined above, we aim to prevent similar incidents in the future and provide a seamless shopping experience for our customers.
