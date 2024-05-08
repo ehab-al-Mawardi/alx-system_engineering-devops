@@ -1,8 +1,9 @@
 Issue Summary:
-
+<br>
 Duration:
 <br>
 Start Time: May 8th, 2024, 2:15 PM (EEST)
+<br>
 End Time: May 8th, 2024, 5:30 PM (EEST)
 <br>
 
@@ -12,6 +13,7 @@ End Time: May 8th, 2024, 5:30 PM (EEST)
 Impact:
 
 Our product listing service went rogue, causing a blackout for all product listings on our e-commerce platform. Customers encountered a frustrating "Product Not Found" message, hindering their shopping experience. This impacted approximately 70% of our user base during a critical sales period.
+<br>
 Timeline:
 
 Detection: Our usual eagle-eyed customer support team noticed a surge in support tickets regarding missing products at 2:30 PM (EEST).
@@ -21,6 +23,7 @@ Escalation: After an hour of troubleshooting, the incident was escalated to the 
 Resolution: The DBA team discovered a recently deployed schema change had caused database locking, hindering product listing retrieval. The schema change was reverted at 5:15 PM (EEST), restoring product listings.
 <br>
 Root Cause and Resolution:
+<br>
 ![2](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/ec0173e7-c180-4723-9657-fd46273373a2)
 
 Root Cause: A recent database schema update intended to improve search functionality resulted in unintended locking behavior, significantly impacting query performance.
@@ -29,12 +32,14 @@ Resolution: The problematic schema change was reverted, restoring normal databas
 Corrective and Preventative Measures:
 
 Improvements/Fixes:
+<br>
 ![3](https://github.com/ehab-al-Mawardi/alx-system_engineering-devops/assets/75522554/30f7a6a5-7cc1-4077-9ddd-72d116231bef)
 
 Implement a more rigorous code review process for database schema changes.
 Integrate automated database performance testing into our deployment pipeline.
 <br>
 Tasks:
+<br>
 Task 1: Conduct a code review workshop to emphasize the importance of considering edge cases during database schema changes.
 Task 2: Set up automated performance checks to monitor database health after deployments.
 Task 3: Review rollback procedures for database schema changes to ensure a faster recovery time in future incidents.
